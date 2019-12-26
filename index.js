@@ -24,7 +24,7 @@ getPort().then(port => {
 })
 
 function boot({ port }) {
-  const source = process.env.SOURCE || `ddd.com/external/download`
+  const source = process.env.SOURCE || `http://chengjiantong.fawufiles.com/external/download`
   const target = `/external/download`
 
   const proxyRequester = new cote.Requester({
