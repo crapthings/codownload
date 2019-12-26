@@ -25,13 +25,14 @@ getPort().then(port => {
 
 function boot({ port }) {
   const source = process.env.SOURCE || `ddd.com/external/download`
-  const target = `http://localhost:${port}/external/download`
+  const target = `/external/download`
 
   const proxyRequester = new cote.Requester({
     name: 'proxy client',
     namespace: 'proxy service',
     source,
     target,
+    port,
   })
 
   proxyRequester.on('cote:added', (args, cb) => {
