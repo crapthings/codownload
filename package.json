@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cote": "^0.21.1",
+    "cote": "^1.0.3",
     "express": "^4.17.1",
     "get-port": "^5.1.0",
     "portfinder": "^1.0.25"
